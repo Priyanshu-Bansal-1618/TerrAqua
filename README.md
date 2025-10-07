@@ -1,18 +1,13 @@
-1. Data Retrieval
-A Python script (data_retriever.py) is developed to fetch groundwater level data from the CGWB India WRIS portal API.
+data_retriever.py
 
-The API restricts queries to 15-day intervals; the script splits the requested date range accordingly and performs parallel querying using joblib for fast data acquisition.
+Fetches groundwater level data from the CGWB WRIS portal using parallelized API requests, handling date splitting and efficient aggregation.
 
-The script consolidates data chunks, removes duplicates, and saves the cleaned data in CSV format for further use.
+Cleans and saves the data to CSV format for further analysis, optimizing for multi-core systems.
 
 
-2. Data Analysis and Visualization
-An interactive Jupyter notebook (STL_demonstration.ipynb) is used to analyze the downloaded DWLR groundwater level data.
 
-The data undergoes preprocessing including time parsing, filtering by measurement times, and anomaly detection.
+STL_demonstration.ipynb
 
-The STL (Seasonal and Trend decomposition using Loess) method decomposes the groundwater level time series into trend, seasonal, and residual components.
+Loads and preprocesses DWLR groundwater data, applying STL decomposition to separate trend, seasonal, and residual components.
 
-Residuals are statistically analyzed for anomalies using a 3-sigma threshold approach.
-
-Visualizations include raw groundwater level time series, decomposed components, and plots marking detected anomalies.
+Detects anomalies in groundwater level time series, visualizing both the raw and decomposed data for insightful pattern recognition.
