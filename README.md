@@ -5,6 +5,7 @@ The API restricts queries to 15-day intervals; the script splits the requested d
 
 The script consolidates data chunks, removes duplicates, and saves the cleaned data in CSV format for further use.
 
+
 2. Data Analysis and Visualization
 An interactive Jupyter notebook (STL_demonstration.ipynb) is used to analyze the downloaded DWLR groundwater level data.
 
