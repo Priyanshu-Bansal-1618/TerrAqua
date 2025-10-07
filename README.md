@@ -1,6 +1,7 @@
 data_retriever.py
 
 Fetches groundwater level data from the CGWB WRIS portal using parallelized API requests, handling date splitting and efficient aggregation.
+This tackles the problem of limited amount of data retriveal(1000 at a time at max). 
 
 Cleans and saves the data to CSV format for further analysis, optimizing for multi-core systems.
 
